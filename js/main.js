@@ -381,7 +381,7 @@
   });
 
 	function getWishes() {
-    fetch('https://spreadsheets.google.com/feeds/list/1cZ3A5DhdtYEjWT6t-eMLN8E7FBYSQDVn_JFI3DhR6zk/od6/public/values?alt=json')
+    fetch('https://docs.google.com/spreadsheets/d/1cZ3A5DhdtYEjWT6t-eMLN8E7FBYSQDVn_JFI3DhR6zk/gviz/tq')
       .then(s => s.text())
       .then(t => t.split(/setResponse\(({.*})\);/)[1])
       .then(x => JSON.parse(x).table.rows)
@@ -396,7 +396,7 @@
           );
         }
       });
-  }
+	}
 	getWishes();
 
 	
