@@ -129,7 +129,9 @@ figure {
   color: #fff;
 }
 @media screen and (max-width: 768px) {
-  .fh5co-nav .menu-1,
+  .fh5co-nav .menu-1 {
+    display: none;
+  }
   .fh5co-nav .menu-2 {
     display: none;
   }
@@ -1435,6 +1437,7 @@ form label {
   -ms-transform: translateX(0px);
   -o-transform: translateX(0px);
   transform: translateX(0px);
+  display: none;
 }
 #fh5co-offcanvas a {
   color: rgba(255, 255, 255, 0.5);
@@ -1456,7 +1459,7 @@ form label {
   display: none;
 }
 #fh5co-offcanvas ul li.offcanvas-has-dropdown > a {
-  display: block;
+  display: none;
   position: relative;
 }
 #fh5co-offcanvas ul li.offcanvas-has-dropdown > a:after {
@@ -1464,6 +1467,7 @@ form label {
   right: 0px;
   font-family: 'icomoon';
   speak: none;
+  display: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
