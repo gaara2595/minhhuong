@@ -404,7 +404,7 @@
 		mobileMenuOutsideClick();
 		parallax();
 		offcanvasMenu();
-		burgerMenu();
+		//burgerMenu();
 		contentWayPoint();
 		dropdown();
 		testimonialCarousel();
