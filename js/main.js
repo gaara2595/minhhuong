@@ -352,15 +352,15 @@
       return;
     }
     fetch(
-      'https://docs.google.com/forms/u/0/d/e/1FAIpQLSc1kvNItwShRQCb4JwdAPoBapzSLnFkjcu4sYpVHAB1wtpD3Q/formResponse',
+      'https://docs.google.com/forms/u/0/d/e/1FAIpQLSejUdhk4JsHfuF6AWtk19WEkVsZfKCsvFgOvI2iz7JTLvEFzA/formResponse',
       {
         method: 'POST',
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded',
         },
         body: encodeForm({
-          'entry.1400761046': data[0].value,
-          'entry.1371777255': utf8(data[1].value),
+          'entry.1023536172': data[0].value,
+          'entry.533895006': utf8(data[1].value),
         }),
         mode: 'no-cors',
       }
@@ -381,7 +381,7 @@
   });
 
 	function getWishes() {
-    fetch('https://docs.google.com/spreadsheets/d/1iut55eVNz9pZWdRL4gUoVEYg2zeyY3dFVIrpOGafEKk/gviz/tq')
+    fetch('https://spreadsheets.google.com/feeds/list/1cZ3A5DhdtYEjWT6t-eMLN8E7FBYSQDVn_JFI3DhR6zk/od6/public/values?alt=json')
       .then(s => s.text())
       .then(t => t.split(/setResponse\(({.*})\);/)[1])
       .then(x => JSON.parse(x).table.rows)
